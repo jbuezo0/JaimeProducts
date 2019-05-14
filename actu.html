@@ -23,12 +23,12 @@
           <label>Nombre</label><br>
             <input type="text" name="texto" onblur="validateText(this)";><br>
         <label>Precio</label><br>
-            <input type="number" name="numero" onsubmit="validateNumber(this);"><br>
+            <input type="text" name="numero" onsubmit="validateNumber(this);"  required pattern="^\d*\.?\d*$"><br>
             <button name="button">Enviar</button><br>
              <input type="checkbox" checked="checked" name="sameadr" required> Actualizar
         </form>
 
-        <script type="text/javascript">
+        <!--<script type="text/javascript">
         function validateNumber(camp) {
         var RegExPattern = /([0-9]+)/;
         var errorMessage = 'Verifica que sea numero';
@@ -38,7 +38,7 @@
             alert(errorMessage);
         }
         }
-        </script>
+        </script>-->
     </body>
 
 </html>
